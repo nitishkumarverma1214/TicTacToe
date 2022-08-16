@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TicTacToe.github.io/static/css/main.08a385cd.css",
-    "main.js": "/TicTacToe.github.io/static/js/main.f43fc1e8.js",
+    "main.css": "/TicTacToe.github.io/static/css/main.2c84ef7c.css",
+    "main.js": "/TicTacToe.github.io/static/js/main.85f583ac.js",
     "static/js/787.28cb0dcd.chunk.js": "/TicTacToe.github.io/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/TicTacToe.github.io/index.html",
-    "main.08a385cd.css.map": "/TicTacToe.github.io/static/css/main.08a385cd.css.map",
-    "main.f43fc1e8.js.map": "/TicTacToe.github.io/static/js/main.f43fc1e8.js.map",
+    "main.2c84ef7c.css.map": "/TicTacToe.github.io/static/css/main.2c84ef7c.css.map",
+    "main.85f583ac.js.map": "/TicTacToe.github.io/static/js/main.85f583ac.js.map",
     "787.28cb0dcd.chunk.js.map": "/TicTacToe.github.io/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08a385cd.css",
-    "static/js/main.f43fc1e8.js"
+    "static/css/main.2c84ef7c.css",
+    "static/js/main.85f583ac.js"
   ]
 }
