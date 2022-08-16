@@ -1,5 +1,7 @@
 import React from 'react';
 import Board from './Board';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 export default class Game extends React.Component {
     
     constructor(props){
@@ -49,7 +51,7 @@ export default class Game extends React.Component {
         'Go to start';
         return (
             <li key={move}>
-        <button onClick={()=>this.jumpTo(move)}>{desc}</button>
+        <Button className="m-1" onClick={()=>this.jumpTo(move)}>{desc}</Button>
         </li>);
         });
         let status;
@@ -60,18 +62,36 @@ export default class Game extends React.Component {
         }
   
       return (
-        <div className="game">
+        <div className="game align-items-center justify-content-center">
           <div className="game-board">
-            <Board 
+
+          <Container className="p-3">
+    <Container className="p-3 mb-4 mt-4 bg-light rounded-3">
+      <h1 className="header">Welcome To Tic Tac Toe</h1>
+      <Container className="d-flex">
+      <Container className='d-inline-block p-5 mb-2 bg-light rounded-3'>
+      <Board 
             squares={current.squares}
             onClick={(i)=>this.handleClick(i)}
 
             />
-          </div>
+            </Container>
+          <Container className="p-5 mb-2 bg-light rounded-3 score-card ">
           <div className="game-info">
-            <div>{status}</div>
+            <div > 
+              <h5 className='header'> {status}</h5>
+             
+              </div>
             <ol>{moves}</ol>
           </div>
+          </Container>
+          </Container>
+    </Container>
+
+  </Container>
+           
+          </div>
+         
         </div>
       );
     }
