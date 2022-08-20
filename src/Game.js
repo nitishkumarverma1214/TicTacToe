@@ -56,44 +56,42 @@ export default class Game extends React.Component {
         });
         let status;
         if (winner) {
-            status = 'Winner: ' + winner;
+            status = 'Winner:' + winner;
         } else {
             status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
         }
   
       return (
-        <div className="game align-items-center justify-content-center">
-          <div className="game-board">
+      
+         
+          <Container className='p-3 mb-4 mt-4 bg-light rounded-3 align-items-center justify-content-center'>
+          <div className='row align-items-center justify-content-center'>
+            <div className='col'>
+            <h1 className="header ">Welcome To Tic Tac Toe</h1>
+            </div>
+          </div>
+          <div className='row mb-4 mt-4'>
 
-          <Container className="p-3">
-    <Container className="p-3 mb-4 mt-4 bg-light rounded-3">
-      <h1 className="header">Welcome To Tic Tac Toe</h1>
-      <Container className="d-flex">
-      <Container className='d-inline-block p-5 mb-2 bg-light rounded-3'>
-      <Board 
+            <div className = "col-md-6 col-sm-12">
+            <Board 
             squares={current.squares}
             onClick={(i)=>this.handleClick(i)}
 
             />
-            </Container>
-          <Container className="p-5 mb-2 bg-light rounded-3 score-card ">
-          <div className="game-info">
-            <div > 
-              <h5 className='header'> {status}</h5>
-             
-              </div>
+     
+            </div>
+            <div className="col-md-6 col-sm-12 my-auto mx-auto">
+            <h5 className=''> {status}
+            
+            </h5>
             <ol>{moves}</ol>
+              
+            </div>
           </div>
+        
           </Container>
-          </Container>
-    </Container>
 
-  </Container>
-           
-          </div>
-         
-        </div>
-      );
+       );
     }
   }
   
